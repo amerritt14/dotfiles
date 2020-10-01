@@ -90,8 +90,8 @@ alias bwds="./bin/webpack-dev-server"
 alias clean_branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 alias ctags="/usr/local/bin/ctags -R --exclude=public --exclude=tmp --exclude=.git --exclude=node_modules --exclude=vendor --exclude=dist"
 alias dev='~/Documents/Scripts/run_servers.sh'
-alias git_cut='g branch -vv | cut -c 3- | awk "\$3 !~/\[/ { print \$1 }" | xargs -n 1 git branch -D'
-alias git_prune='g remote prune upstream && git br -vv | grep gone | awk "{print $1}" | xargs -n 1 git branch -D'
+git_cut() { g branch -vv | cut -c 3- | awk "\$3 !~/\[/ { print \$1 }" | xargs -n 1 git branch -D; }
+git_prune() { g remote prune upstream && git br -vv | grep gone | awk "{print $1}" | xargs -n 1 git branch -D; }
 alias kill_dev='~/Documents/Scripts/kill_servers.sh'
 alias matrix='~/Documents/Scripts/matrix.sh'
 alias mysql="/usr/local/bin/mysql"
