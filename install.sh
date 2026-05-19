@@ -66,6 +66,9 @@ echo "\nDone. Open a new shell or run: source ~/.zshrc"
 
 # Remind about Keychain secrets on a new machine
 echo "\nOn a new machine, add secrets to Keychain:"
+echo "  # Tiptap pro npm registry token (tiptap.dev account → registry access)"
 echo "  security add-generic-password -s NPM_TIPTAP_REGISTRY_TOKEN -a \$USER -w <value>"
-echo "  security add-generic-password -s DAD_JOKE_P               -a \$USER -w <value>"
-echo "  security add-generic-password -s CONTAINER_REGISTRY_PAT   -a \$USER -w <value>"
+echo "  # Password for the dad-joke server (178.156.158.38)"
+echo "  security add-generic-password -s DAD_JOKE_P -a \$USER -w <value>"
+echo "  # GitHub PAT for GitHub Container Registry (ghcr.io) access"
+echo "  security add-generic-password -s CONTAINER_REGISTRY_PAT -a \$USER -w <value>"

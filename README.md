@@ -30,9 +30,14 @@ git clone https://github.com/amerritt14/dotfiles.git ~/Projects/dotfiles
 Sensitive tokens are stored in the **macOS Keychain** and loaded at shell startup — no plaintext values are committed to this repo. On a new machine, add them with:
 
 ```sh
+# Tiptap pro npm registry token (tiptap.dev account → registry access)
 security add-generic-password -s NPM_TIPTAP_REGISTRY_TOKEN -a $USER -w <value>
-security add-generic-password -s DAD_JOKE_P               -a $USER -w <value>
-security add-generic-password -s CONTAINER_REGISTRY_PAT   -a $USER -w <value>
+
+# Password for the dad-joke server (178.156.158.38)
+security add-generic-password -s DAD_JOKE_P -a $USER -w <value>
+
+# GitHub PAT for GitHub Container Registry (ghcr.io) access
+security add-generic-password -s CONTAINER_REGISTRY_PAT -a $USER -w <value>
 ```
 
 ## New Machine Setup Notes
