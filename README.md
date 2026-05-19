@@ -33,7 +33,7 @@ Sensitive tokens are stored in the **macOS Keychain** and loaded at shell startu
 # Tiptap pro npm registry token (tiptap.dev account → registry access)
 security add-generic-password -s NPM_TIPTAP_REGISTRY_TOKEN -a $USER -w <value>
 
-# Password for the dad-joke server (178.156.158.38)
+# Password for the dad-joke server
 security add-generic-password -s DAD_JOKE_P -a $USER -w <value>
 
 # GitHub PAT for GitHub Container Registry (ghcr.io) access
