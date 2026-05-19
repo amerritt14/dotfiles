@@ -43,6 +43,12 @@ link "$DOTFILES/.tool-versions"   "$HOME/.tool-versions"
 mkdir -p "$HOME/.ssh"
 link "$DOTFILES/ssh/config"       "$HOME/.ssh/config"
 
+# Kitty
+mkdir -p "$HOME/.config/kitty"
+link "$DOTFILES/kitty/kitty.conf"               "$HOME/.config/kitty/kitty.conf"
+link "$DOTFILES/kitty/current-theme.conf"       "$HOME/.config/kitty/current-theme.conf"
+link "$DOTFILES/kitty/catppuccin-macchiato.conf" "$HOME/.config/kitty/catppuccin-macchiato.conf"
+
 echo "\nDone. Open a new shell or run: source ~/.zshrc"
 
 # Remind about Keychain secrets on a new machine
