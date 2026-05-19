@@ -1,0 +1,250 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.linkedEditing": true,
+  "editor.rulers": [
+    120,
+    150,
+  ],
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/bower_components": true,
+    "**/CVS": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/tmp": true
+  },
+  "files.watcherExclude": {
+    "**/.expo/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true, // CMD + Enter to smart commit
+  "git.ignoreLimitWarning": true,
+  "git.addAICoAuthor": "off",
+  "gitlens.advanced.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "Archipelago.app",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": []
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.colorCustomizations": {
+    "editor.background": "#181c20",
+    "tab.activeBorderTop": "#64676e",
+    "editorRuler.foreground": "#f3b25150"
+  },
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.tree.indent": 15,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+
+  // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.erb": "erb",
+    "Gemfile": "ruby",
+    "*.gemfile": "ruby",
+    "Steepfile": "ruby",
+    "*.rbs": "ruby",
+    "*.svg": "xml"
+  },
+
+  // EMMET
+  // Enable Emmet abbreviations in languages that are not supported by default.
+  "emmet.includeLanguages": {
+    "html.erb": "html",
+    "html.inky": "html",
+    "erb": "html",
+    "*.erb": "html",
+    "js.erb": "javascript",
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "npm.packageManager": "yarn",
+  "ruby.lintDebounceTime": 1000,
+  // "ruby.lint": {
+  //   "rubocop": true,
+  // },
+  // "ruby.format": "rubocop",
+  "ruby.format": "standard",
+  "ruby.lint": {
+    "standard": true
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
+  },
+  "ruby.useBundler": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "extensions.ignoreRecommendations": true,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/dist": true,
+    "**/log": true,
+    "**/tmp": true,
+    "**/vendor/{[^l],?[^ai]}*": true,
+    "/public/{[^i],?[^n]}*": true,
+    "CHANGELOG.md": true,
+    "Gemfile.lock": true,
+    "yarn-error.log": true,
+    "yarn.lock": true
+  },
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "ruby.rubocop.executePath": "/Users/andrewmerritt/.rvm/gems/ruby-2.7.6/bin/",
+  "editor.inlineSuggest.enabled": true,
+  "sync.gist": "aecd625199e4e62a0873465eeff5d708",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
+  },
+  "ruby.rubocop.suppressRubocopWarnings": true,
+  "githubPullRequests.pullBranch": "never",
+  "editor.stickyScroll.enabled": true,
+  "redhat.telemetry.enabled": false,
+  "editor.defaultFormatter": "testdouble.vscode-standard-ruby",
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "always",
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "always",
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "always",
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "always",
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": false,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": false,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": false,
+    "definition": true,
+    "workspaceSymbol": true,
+    "references": true
+  },
+  "rubyLsp.formatter": "standard",
+  "standardRuby.mode": "enableViaGemfile",
+  "window.zoomLevel": 1,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "git.ignoreRebaseWarning": true,
+  "accessibility.underlineLinks": true,
+  "scm.experimental.showHistoryGraph": true,
+  "workbench.accounts.experimental.showEntitlements": true,
+  "conventionalCommits.scopes": [
+    "ad_network",
+    "ad_portal",
+    "db",
+  ],
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "githubPullRequests.notifications": "pullRequests",
+  "notebook.codeActionsOnSave": {
+
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
+  "chat.mcp.gallery.enabled": true,
+  "chat.tools.urls.autoApprove": {
+    "https://raw.githubusercontent.com": {
+      "approveRequest": false,
+      "approveResponse": true
+    }
+  },
+  "chat.tools.terminal.autoApprove": {
+    "bundle": true,
+    "doppler run -- bundle exec rspec": true
+  },
+  "editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": "variable.other.readwrite.instance",
+      "settings": {
+        "foreground": "#ff8818"
+      }
+    },
+    {
+      "scope": "punctuation.definition.variable.ruby",
+      "settings": {
+        "foreground": "#ff8818"
+      }
+    }
+  ]
+},
+"claudeCode.preferredLocation": "sidebar",
+"security.workspace.trust.untrustedFiles": "open"
+}

@@ -49,6 +49,12 @@ link "$DOTFILES/kitty/kitty.conf"               "$HOME/.config/kitty/kitty.conf"
 link "$DOTFILES/kitty/current-theme.conf"       "$HOME/.config/kitty/current-theme.conf"
 link "$DOTFILES/kitty/catppuccin-macchiato.conf" "$HOME/.config/kitty/catppuccin-macchiato.conf"
 
+# VSCode
+VSCODE_DIR="$HOME/Library/Application Support/Code/User"
+mkdir -p "$VSCODE_DIR"
+link "$DOTFILES/vscode/settings.json"    "$VSCODE_DIR/settings.json"
+link "$DOTFILES/vscode/keybindings.json" "$VSCODE_DIR/keybindings.json"
+
 echo "\nDone. Open a new shell or run: source ~/.zshrc"
 
 # Remind about Keychain secrets on a new machine

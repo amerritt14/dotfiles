@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+g cmd+a",
+        "command": "git.commitStagedAmend"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "key": "shift+cmd+c shift+cmd+i",
+      "command": "workbench.view.extension.claude-sidebar-secondary"
+    }
+]
