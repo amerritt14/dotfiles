@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Skill(mempalace:mempalace)",
+      "Skill(mempalace:mempalace:*)",
+      "mcp__claude_ai_Linear__get_issue",
+      "mcp__claude_ai_Linear__get_issue_status",
+      "mcp__claude_ai_Linear__list_comments",
+      "Bash(bundle exec rspec --only-failures)",
+      "Bash(grep*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [{
+      "matcher": "*",
+      "hooks": [{
+        "type": "command",
+        "command": "/Users/andrewmerritt/.claude/plugins/marketplaces/mempalace/hooks/mempal_save_hook.sh",
+        "timeout": 30
+      }]
+    }],
+    "PreCompact": [{
+      "hooks": [{
+        "type": "command",
+        "command": "/Users/andrewmerritt/.claude/plugins/marketplaces/mempalace/hooks/mempal_precompact_hook.sh",
+        "timeout": 30
+      }]
+    }]
+  }
+}

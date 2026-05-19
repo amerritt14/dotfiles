@@ -55,6 +55,13 @@ mkdir -p "$VSCODE_DIR"
 link "$DOTFILES/vscode/settings.json"    "$VSCODE_DIR/settings.json"
 link "$DOTFILES/vscode/keybindings.json" "$VSCODE_DIR/keybindings.json"
 
+# Claude Code
+# NOTE: hook paths in settings.json are hardcoded to ~/. Update them if your username differs.
+# Plugins (mempalace, ruby-lsp) must be installed separately before hooks will work.
+mkdir -p "$HOME/.claude"
+link "$DOTFILES/claude/settings.json"       "$HOME/.claude/settings.json"
+link "$DOTFILES/claude/settings.local.json" "$HOME/.claude/settings.local.json"
+
 echo "\nDone. Open a new shell or run: source ~/.zshrc"
 
 # Remind about Keychain secrets on a new machine
