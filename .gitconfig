@@ -1,0 +1,14 @@
+[core]
+	excludesfile = /Users/andrewmerritt/.gitignore_global
+	editor = code -w
+[user]
+	email = andrew.w.merritt@gmail.com
+	name = Andrew Merritt
+[push]
+	autoSetupRemote = true
+[rerere]
+	enabled = true
+[alias]
+  lb = "!f() { count=${1:-10}; git reflog show --pretty=format='%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n $count | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'; }; f"
+[pull]
+	ff = only
